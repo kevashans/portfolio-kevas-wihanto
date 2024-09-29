@@ -1,10 +1,189 @@
-.jobs
-{
-    width: 90%;
+.experience-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 99vw;
+  background-color: black;
 }
 
- .jobs svg {
-    height: 100vh;
-    margin-left: -18px;
+.waves {
+  width: 90vw;
+  max-width: 100%;
+  height: 35vh;
+}
+
+.waves svg {
+  width: 99vw;
+  height: 100vh;
+  z-index: -2;
+}
+
+.title {
+  align-self: center;
+  font-size: 60px;
+  /* color: #0CBF86; */
+  color: #b3b2b2;
+  font-family: "Nixie One", system-ui;
+}
+
+.experience-container {
+  margin-top: 5em;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 10em;
+}
+
+.experience-card {
+  display: flex;
+  margin-top: 5em;
+  flex-direction: row;
+  gap: 12em;
+}
+
+.experience-card-content {
+  flex-direction: column;
+}
+
+.experience-card-title {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.experience-card-position {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.experience-card-date {
+  flex-direction: column;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  align-content: start;
+  align-items: flex-start;
+  gap: 1em;
+  margin-left: 10em;
+}
+
+.experience-list ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.experience-list li {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.experience-card-image {
+  width: 100%;
+  max-height: 350px;
+}
+
+.experience-card-image img {
+  max-width: 100%;
+  max-height: 50px;
+}
+
+.experience-tags {
+  font-size: 20px;
+}
+
+/* .card-custom {
+  width: 18rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: black;
+  transition: border-color 0.5s ease;
+}
+
+.card-custom:hover {
+  border-color: #0AFFB1; 
+  /* border-color: #060B1E; 
+} */
+
+.card-custom {
+  position: relative;
+  width: 18rem;
+  border-radius: 10px;
+  background-color: black;
+  overflow: hidden;
+  /* To ensure pseudo-elements stay within bounds */
+}
+
+
+.card-custom::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  z-index: 1;
+  pointer-events: none;
+  transition: border-color 0.3s ease;
+}
+
+
+.card-custom:hover::before {
+  animation: borderAnimation 2s linear infinite;
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-top-color: #0AFFB1;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
   }
 
+  25% {
+    border-top-color: #0AFFB1;
+    border-right-color: #0AFFB1;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+  50% {
+    border-top-color: #0AFFB1;
+    border-right-color: #0AFFB1;
+    border-bottom-color: #0AFFB1;
+    border-left-color: transparent;
+  }
+
+  75% {
+    border-top-color: #0AFFB1;
+    border-right-color: #0AFFB1;
+    border-bottom-color: #0AFFB1;
+    border-left-color: #0AFFB1;
+  }
+
+  /* 100% {
+    border-top-color: #0AFFB1;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  } */
+}
