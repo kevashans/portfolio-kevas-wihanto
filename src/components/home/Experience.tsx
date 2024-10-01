@@ -18,14 +18,14 @@ const Experience: React.FC = () => {
         {
             title: 'Indocement',
             description: "Worked as a Fullstack Developer, improving the company's ERP system specifically their truck scale system.",
-            image: './public/images/Indocement.png',
+            image: '/portofolio-kevas-wihanto/images/Indocement.png',
             tags: ['.NET', 'JavaScript', 'Fullstack', 'IoT', 'Java'],
             date: '07/23 – 09/23'
         },
         {
             title: 'ControlSoft',
             description: 'Developed and maintained features for the company’s upcoming software product, a software for controlling industrial machines.',
-            image: './public/images/ControlSoft.png',
+            image: '/portofolio-kevas-wihanto/images/ControlSoft.png',
             tags: ['.NET', 'C#', 'Fullstack', 'Blazor', 'IoT'],
             date: '01/24 – 08/24'
         }
