@@ -15,9 +15,9 @@ const Projects: React.FC = () => {
     const projects: Project[] = [
         { title: 'UpFlux', description: 'Offline frame updating system created for ABB research center in Dundalk', images: ['/images/UpFlux.png', '/images/UpFlux.png'], tags: ['WIP', 'ABB', 'IoT', 'C#', '.NET'], link: "https://github.com/UpFlux-By-The-Boys" },
         { title: 'SCAR', description: 'Augmented reality airsoft gunscope with a companion app that presents analytics', images: ['/images/SCAR.png'], tags: ['AWS', 'Jetpack Compose', 'IoT'], link: "https://github.com/gursimar03/SCAR" },
-        { title: 'Bugs Life', description: 'A game where bugs are spawned in a chessboard and the last bug standing wins.', images: ['/images/BugsLife.png'], tags: ['C++', 'Chessboard', 'Strategy'], link: "https://github.com/kevashans/Bugs-Life" },
-        { title: 'Soccer Savvy', description: 'A newspaper web application for football fans, fitted with an admin system, and live matches', images: ['/images/SoccerSavvy.png'], tags: ['React', 'Laravel', 'Fullstack', 'Erasmus'], link: "https://github.com/Luqua5/eCoal" },
-        { title: 'Job Rush', description: 'An application used by individuals who are looking for short term employment and those who need short-term workers', images: ['/images/JR.png'], tags: ['Figma', 'Erasmus'], link: "https://www.figma.com/proto/YZpwhCJBRoCK5UfV72JsS3/Job-Rush?node-id=0-1&t=vUWTPhNZu7gKRlWA-1" },
+        { title: 'Bugs Life', description: 'A game where bugs are spawned in a chessboard and the last bug standing wins. fitted with auto mode and logs file for end result of a match.', images: ['/images/BugsLife.png'], tags: ['C++', 'Chessboard', 'Strategy'], link: "https://github.com/kevashans/Bugs-Life" },
+        { title: 'Soccer Savvy', description: 'Collaborated with French and Portuguese students in creating a newspaper web application for football fans, fitted with an admin system, and live matches.', images: ['/images/SoccerSavvy.png'], tags: ['React', 'Laravel', 'Fullstack', 'Erasmus', 'ECoal23'], link: "https://github.com/Luqua5/eCoal" },
+        { title: 'Job Rush', description: 'Collaborated with students of different diciplines and nationalities in designing an application used by individuals who are looking for short term employment and those who need short-term workers', images: ['/images/JR.png'], tags: ['Figma', 'Erasmus'], link: "https://www.figma.com/proto/YZpwhCJBRoCK5UfV72JsS3/Job-Rush?node-id=0-1&t=vUWTPhNZu7gKRlWA-1" },
     ];
 
     return (
