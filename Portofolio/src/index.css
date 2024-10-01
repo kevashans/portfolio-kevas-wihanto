@@ -6,6 +6,7 @@
   color-scheme: light;
   color: rgba(255, 255, 255, 0.87);
   background-color: white;
+  overflow-x: hidden;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,10 +24,10 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  margin-top: 0;
   display: flex;
   place-items: center;
-  width: 97vw;
+  width: 100vw;
   min-height: 100vh;
 }
 

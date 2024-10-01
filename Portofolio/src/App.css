@@ -48,7 +48,7 @@
   flex-direction: column;
   align-items: flex-start;
   height: 100vh;
-  min-width: 99vw;
+  min-width: 100vw;
   padding: 0px;
 }
 
@@ -65,8 +65,30 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 100vh;
-  min-width: 99vw;
-  padding: 0px;
-  z-index: -1;
+  z-index: 1;
+  width: fit-content;
+  height: fit-content;
+  background-color: black;
+  position: relative;
+}
+
+.stars-container{
+  max-height: 80%;
+  height:70%
+}
+
+.particles-container
+{
+  z-index:-1;
+  position: absolute;
+}
+
+#tsparticles {
+  height: 90%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  z-index: 0;
+  position: absolute;
 }
