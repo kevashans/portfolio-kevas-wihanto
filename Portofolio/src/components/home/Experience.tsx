@@ -1,9 +1,36 @@
-import React from 'react';
 import './Experience.css';
-import { Card, Badge } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from 'react';
+import { Card, Badge, Row, Col, Carousel, Modal, Button } from 'react-bootstrap';
+
+
+interface ExperienceData {
+    title: string;
+    description: string;
+    image: string;
+    tags: string[];
+    date: string;
+}
 
 const Experience: React.FC = () => {
+
+    const experiences: ExperienceData[] = [
+        {
+            title: 'Indocement',
+            description: "Worked as a Fullstack Developer, improving the company's ERP system specifically their truck scale system.",
+            image: './public/images/Indocement.png',
+            tags: ['.NET', 'JavaScript', 'Fullstack', 'IoT', 'Java'],
+            date: '07/23 – 09/23'
+        },
+        {
+            title: 'ControlSoft',
+            description: 'Developed and maintained features for the company’s upcoming software product, a software for controlling industrial machines.',
+            image: './public/images/ControlSoft.png',
+            tags: ['.NET', 'C#', 'Fullstack', 'Blazor', 'IoT'],
+            date: '01/24 – 08/24'
+        }
+    ];
+
     return (
         <div className='experience-wrapper'>
             <div className='waves'>
@@ -27,48 +54,27 @@ const Experience: React.FC = () => {
                 </svg>
             </div>
             <div className='experience-container'>
-                <div className='title'>
-                    Work Experience
-                </div>
-                <div className='cards'>
-                    <Card className="card-custom" style={{ backgroundColor:'black'  }}>
-                        <Card.Img className='experience-card-image' variant="top" src="./public/images/Indocement.png" />
-                        <Card.Body>
-                            {/* <Card.Title className='card-title'>Indocement - Heidelberg Cement Group</Card.Title> */}
-                            <Card.Text>
-                                <div className='experience-list'>
-                                </div>
-                            </Card.Text>
-
-                            <div className='experience-tags'>
-                                <Badge bg="warning" text="dark" className="m-1">.NET</Badge>
-                                <Badge bg="danger" className="m-1">JavaScript</Badge>
-                                <Badge bg="secondary" className="m-1">Fullstack</Badge>
-                                <Badge bg="secondary" className="m-1">IOT</Badge>
-                                <Badge bg="warning" text="dark" className="m-1">Java</Badge>
-                            </div>
-                        </Card.Body>
-                    </Card>
-                    {/*boxShadow: '0 4px 8px #0AFFB1'; #060B1E*/}
-                    <Card className="card-custom" style={{ backgroundColor:'black'  }}>
-                        <Card.Img className='experience-card-image' variant="top" src="./public/images/ControlSoft.png" />
-                        <Card.Body >
-                            {/* <Card.Title className='card-title'>ControlSoft</Card.Title> */}
-                            <Card.Text>
-                                <div className='experience-list'>
-                                </div>
-                            </Card.Text>
-                            
-                            <div className='experience-tags' style={{ marginTop:"4.0em" }}>
-                                <Badge bg="warning" text="dark" className="m-1">.NET</Badge>
-                                <Badge bg="danger" className="m-1">C#</Badge>
-                                <Badge bg="secondary" className="m-1">Fullstack</Badge>
-                                <Badge bg="warning" text="dark" className="m-1">Blazor</Badge>
-                                <Badge bg="secondary" className="m-1">IOT</Badge>
-                            </div>
-                        </Card.Body>
-                    </Card>
-                </div>
+                <div className='title'>Work Experience</div>
+                <Row className='d-flex justify-content-center'>
+                    {experiences.map((experience, index) => (
+                        <Col md={4} sm={12} className="d-flex justify-content-center mb-4" key={index}>
+                            <Card className="card-custom" style={{ backgroundColor: 'black', color: 'white', borderBottom:'10px solid #0AFFB1' }}>
+                                <Card.Img className='experience-card-image' variant="top" src={experience.image} />
+                                <Card.Body>
+                                    <Card.Title>{experience.title}</Card.Title>
+                                    <Card.Text>{experience.description}</Card.Text>
+                                    <div className='experience-tags'>
+                                        {experience.tags.map((tag, idx) => (
+                                            <Badge bg="primary" key={idx} className="m-1">
+                                                {tag}
+                                            </Badge>
+                                        ))}
+                                    </div>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    ))}
+                </Row>
             </div>
         </div>
     );

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
-import './Banner.css';
 import anime from 'animejs';
+import Socials from './Socials';
+import './Banner.css';
 
 interface BannerProps {
   title: string;
@@ -71,6 +72,7 @@ const Banner: React.FC<BannerProps> = ({ title }) => {
           My name is
           <span className='name'> Kevas </span>
           a 4th year software development student
+          <Socials gitHub="https://github.com/kevashans" linkedIn='https://linkedin.com/in/kevas-hans-christian-wihanto-a72260226' color='#002147'/>
         </div>
       </div>
       <svg id="visual" viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="none">
