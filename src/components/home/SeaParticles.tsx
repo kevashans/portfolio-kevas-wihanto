@@ -12,8 +12,6 @@ import {
 const SeaParticles:React.FC = () => {
   const [init, setInit] = useState(false);
   
-
-  // this should be run only once per application lifetime
   useEffect(() => {
     initParticlesEngine(async (engine) => {
       await loadStarsPreset(engine)
