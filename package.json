@@ -1,9 +1,9 @@
 {
-  "name": "portofolio",
+  "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://kevashans.github.io/portofolio-kevas-wihanto",
+  "homepage": "https://kevashans.github.io/portfolio-kevas-wihanto",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
